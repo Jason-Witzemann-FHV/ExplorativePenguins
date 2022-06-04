@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-penguins = pd.read_csv("penguins.csv").drop(columns="Unnamed: 0").dropna().reset_index()
+penguins = pd.read_csv("penguins.csv").dropna().reset_index().drop(columns=["Unnamed: 0", "index"])
 
 
 
